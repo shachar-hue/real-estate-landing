@@ -10,7 +10,7 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: 82.25.102.111
+          server: ftp.frida-nadlan.com
           username: u803964921.githubdeploy
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
