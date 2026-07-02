@@ -15,3 +15,14 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: /public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
+            package.json
+            package-lock.json
+            server.js
+            .env.example
+            vercel.json
+            README.md
